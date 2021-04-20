@@ -1,0 +1,291 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/avenir</item>
+        <item name="fontFamily">@font/avenir</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="chipStyle">@style/Widget.GZ.Chip.Choice</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+        <item name="rippleColor">@color/colorTextUnderlined</item>
+    </style>
+
+    <style name="nav_theme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="CoverTheme" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSizeBottomLeft">60dp</item>
+        <item name="cornerSizeBottomRight">-50dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+
+    </style>
+
+    <style name="Top_Item_Image_style" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="Normal_Image_style" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSizeTopLeft">12dp</item>
+        <item name="cornerSizeTopRight">12dp</item>
+        <item name="cornerSizeBottomRight">12dp</item>
+        <item name="cornerSizeBottomLeft">12dp</item>
+        <item name="elevation">6dp</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="AppTheme">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+
+    <style name="SectionHeader" parent="AppTheme">
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Widget.GZ.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="singleSelection">true</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="chipBackgroundColor">@color/dynamic_chip_background</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Chip</item>
+        <item name="android:textColor">@color/dynamic_chip_text_color</item>
+        <item name="android:textAppearance">@style/chipTextAppearance</item>
+
+
+    </style>
+
+    <style name="ThemeOverlay.App.Chip" parent="">
+        <item name="android:textColor">@color/dynamic_chip_text_color</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="chipTextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.GZ.Button.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">100%</item>
+        <item name="cornerRadius">150dp</item>
+        <item name="android:textAppearance">@style/H3TextAppearance</item>
+    </style>
+
+    <style name="ToolbarTitleStyle" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/gilroy_bold</item>
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+
+
+    <style name="MainEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="theme">@style/MainEditTextStyle</item>
+        <item name="colorAccent">@color/colorTextPrimary</item>
+        <item name="android:colorAccent">@color/colorTextPrimary</item>
+        <item name="android:textAppearance">@style/H2BoldTextAppearance</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.0041</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="H1TextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.0041</item>
+    </style>
+
+    <style name="H2TextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="H2Avenir" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="fontFamily">@font/avenir_semi_bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="H2BoldTextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="H3TextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="fontFamily">@font/gilroy_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0</item>
+
+    </style>
+
+    <style name="CalendarDayTextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0</item>
+
+    </style>
+
+    <style name="H3Avenir" parent="H3TextAppearance">
+        <item name="fontFamily">@font/avenir_regular</item>
+    </style>
+
+    <style name="H4TextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="H5TextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="fontFamily">@font/gilroy_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="H5MediumTextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="h5AvenirMedium" parent="H5MediumTextAppearance">
+        <item name="fontFamily">@font/avenir_semi_bold</item>
+    </style>
+
+    <style name="PrimaryButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="rippleColor">@color/colorAccentDark</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:shadowColor">@color/colorAccent</item>
+        <item name="android:letterSpacing">-0.0041</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="SecondaryButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="backgroundTint">@color/d_secondary_btn_bg</item>
+        <item name="android:textColor">@color/d_secondary_btn_tc</item>
+        <item name="fontFamily">@font/avenir_semi_bold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">-0.003</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+    <style name="HoloButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:checkable">true</item>
+        <item name="android:textColor">@color/d_secondary_btn_tc</item>
+        <item name="android:background">@drawable/dynamic_holo_button_bg</item>
+        <item name="iconTint">@color/d_holo_button_icon_tint</item>
+        <item name="fontFamily">@font/avenir_semi_bold</item>
+        <item name="tint">@null</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">-0.003</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="HoloButtonStyle2" parent="Widget.AppCompat.ActionButton">
+        <item name="android:checkable">true</item>
+        <item name="android:textColor">@color/d_secondary_btn_tc</item>
+        <item name="android:background">@drawable/dynamic_white_transparent_button_bg</item>
+        <item name="iconTint">@color/d_holo_button_icon_tint</item>
+        <item name="fontFamily">@font/avenir_semi_bold</item>
+        <item name="tint">@null</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">-0.003</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+    <style name="TextButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:textColor">@color/colorTextUnderlined</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="iconTint">@color/colorTextUnderlined</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="FloatingButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorTextUnderlined</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="iconTint">@color/colorTextUnderlined</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_round_bg</item>
+        <item name="behavior_skipCollapsed">true</item>
+        <item name="behavior_fitToContents">true</item>
+        <item name="behavior_hideable">false</item>
+    </style>
+
+
+    //switch style
+
+    <style name="Widget.App.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorOnSurface">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+    </style>
+
+    <style name="RoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">100dp</item>
+    </style>
+
+
+</resources>
