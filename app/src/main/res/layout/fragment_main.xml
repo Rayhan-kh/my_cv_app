@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:clipToPadding="false"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightBlue"
+        tools:context=".view.MainFragment">
+
+    <ImageButton
+            android:background="@drawable/transparent_bg"
+            android:src="@drawable/ic_arrow_left_white"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline2"
+            app:layout_constraintGuide_begin="16dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline4"
+            app:layout_constraintGuide_begin="16dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline6"
+            app:layout_constraintGuide_end="16dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+            android:padding="2dp"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/image"
+            app:strokeColor="@color/colorWhite"
+            app:strokeWidth="2dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            android:contentDescription="@string/profile_picture"
+            app:layout_constraintDimensionRatio="h,1:1"
+            android:layout_marginTop="16dp"/>
+
+    <TextView
+            android:textColor="@color/colorWhite"
+            android:text="@string/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            style="@style/H2TextAppearance"/>
+
+    <TextView
+            android:text="@string/designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_designation"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_name"
+            app:layout_constraintEnd_toEndOf="@+id/tv_name"
+            style="@style/H3Avenir"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/bottomsheet_round_bg"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_designation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="24dp">
+
+        <com.google.android.material.textview.MaterialTextView
+                android:padding="16dp"
+                android:text="@string/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6sp"
+                style="@style/H3TextAppearance"
+                android:justificationMode="inter_word"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:id="@+id/tv_description"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:text="Experiences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_experience"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                style="@style/H2Avenir"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_experience"
+                android:layout_marginTop="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
