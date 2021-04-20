@@ -6,4 +6,8 @@
     <string name="designation">Native Android Developer</string>
     <string name="profile_picture">profile picture</string>
     <string name="description">Being an Android Designer, over the years I have been successfully able to master the skills required for creating immensely functioning, smoothly operating and visually pleasant mobile applications</string>
+    <string name="home">Home</string>
+    <string name="projects">Projects</string>
+    <string name="skills">Skills</string>
+    <string name="personal">Personal</string>
 </resources>

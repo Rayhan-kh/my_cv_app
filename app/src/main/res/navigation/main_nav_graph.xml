@@ -8,5 +8,31 @@
             android:name="com.foxcoder.cvapplication.view.MainFragment"
             android:id="@+id/main_fragment"
             tools:layout="@layout/fragment_main"/>
+    <fragment
+            android:id="@+id/skill_fragment"
+            android:name="com.foxcoder.cvapplication.view.SkillsFragment"
+            tools:layout="@layout/fragment_skills"/>
+
+    <fragment
+            android:id="@+id/personal_fragment"
+            android:name="com.foxcoder.cvapplication.view.PersonalFragment"
+            tools:layout="@layout/fragment_personal"/>
+
+    <fragment
+            android:id="@+id/project_fragment"
+            android:name="com.foxcoder.cvapplication.view.ProjectsFragment"
+            tools:layout="@layout/fragment_projects"/>
+    <action
+            android:id="@+id/action_global_skill_fragment"
+            app:destination="@id/skill_fragment"/>
+    <action
+            android:id="@+id/action_global_main_fragment2"
+            app:destination="@id/main_fragment"/>
+    <action
+            android:id="@+id/action_global_personal_fragment"
+            app:destination="@id/personal_fragment"/>
+    <action
+            android:id="@+id/action_global_project_fragment"
+            app:destination="@id/project_fragment"/>
 
 </navigation>
