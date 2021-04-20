@@ -17,8 +17,8 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val host = supportFragmentManager.findFragmentById(R.id.main_nav) as NavHostFragment
-        navController = host.navController
+        navHostFragment = supportFragmentManager.findFragmentById(R.id.main_nav) as NavHostFragment
+        navController = navHostFragment.navController
         binding.bottomNavigationView.setupWithNavController(navController)
     }
 
