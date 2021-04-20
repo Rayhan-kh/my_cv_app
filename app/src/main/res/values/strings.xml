@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CV App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Rayhan Khan</string>
+    <string name="designation">Native Android Developer</string>
+    <string name="profile_picture">profile picture</string>
+    <string name="description">Being an Android Designer, over the years I have been successfully able to master the skills required for creating immensely functioning, smoothly operating and visually pleasant mobile applications</string>
 </resources>

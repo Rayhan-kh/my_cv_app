@@ -7,7 +7,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:fontFamily">@font/avenir</item>
         <item name="fontFamily">@font/avenir</item>
-        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="chipStyle">@style/Widget.GZ.Chip.Choice</item>
@@ -284,7 +284,7 @@
 
     <style name="RoundedImageView" parent="">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerRadius">100dp</item>
+        <item name="cornerSize">50%</item>
     </style>
 
 
