@@ -9,15 +9,15 @@
         android:background="@color/colorLightBlue"
         tools:context=".view.MainFragment">
 
-    <ImageButton
-            android:background="@drawable/transparent_bg"
-            android:src="@drawable/ic_arrow_left_white"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:id="@+id/imageButton"
-            app:layout_constraintTop_toTopOf="@+id/guideline4"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            />
+<!--    <ImageButton-->
+<!--            android:background="@drawable/transparent_bg"-->
+<!--            android:src="@drawable/ic_arrow_left_white"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:id="@+id/imageButton"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/guideline4"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+<!--            />-->
 
     <androidx.constraintlayout.widget.Guideline
             android:orientation="vertical"
@@ -45,7 +45,7 @@
             app:shapeAppearanceOverlay="@style/RoundedImageView"
             android:layout_width="100dp"
             android:layout_height="0dp"
-            app:srcCompat="@drawable/image"
+            app:srcCompat="@drawable/ray"
             app:strokeColor="@color/colorWhite"
             app:strokeWidth="2dp"
             android:scaleType="centerCrop"
@@ -122,7 +122,7 @@
                 style="@style/H2Avenir"/>
 
         <androidx.recyclerview.widget.RecyclerView
-
+                android:id="@+id/rv_experiences"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
