@@ -12,7 +12,9 @@
     <color name="colorGray">#888888</color>
     <color name="colorTransparent">#00FDD835</color>
     <color name="colorWhite">#ffffff</color>
-    <color name="colorLightBlue">#1C84FF</color>
+<!--    <color name="colorLightBlue">#9fa8da</color>-->
+    <color name="colorLightBlue">#5c6bc0</color>
+    <color name="colorLighterBlue">#A8E8EAF6</color>
     <color name="whiteBlue">#280F1583</color>
     <color name="colorTextPrimary">#011627</color>
     <color name="colorTextLight">#546378</color>

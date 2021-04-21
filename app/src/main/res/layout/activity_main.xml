@@ -19,6 +19,9 @@
             app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:padding="16dp"
+            android:elevation="6dp"
+            android:background="@drawable/bottomsheet_round_bg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -26,5 +29,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:menu="@menu/navigation_menu"
             style="@style/nav_theme"
+            app:labelVisibilityMode="labeled"
             android:id="@+id/bottomNavigationView"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

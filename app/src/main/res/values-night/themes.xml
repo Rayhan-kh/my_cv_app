@@ -17,10 +17,10 @@
         <item name="rippleColor">@color/colorTextUnderlined</item>
     </style>
 
-    <style name="nav_theme" parent="AppTheme">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorPrimaryDark</item>
+    <style name="nav_theme" parent="">
+        <item name="colorPrimary">@color/colorLighterBlue</item>
+        <item name="colorOnPrimary">@color/colorLightBlue</item>
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
     </style>
 
     <style name="CoverTheme" parent="ShapeAppearance.MaterialComponents.MediumComponent">

@@ -8,29 +8,31 @@
 
     <androidx.appcompat.widget.AppCompatTextView
             app:layout_constraintHorizontal_weight="1"
-            style="@style/H2TextAppearance"
-            android:text="Dec,2019 - Present"
-            android:layout_width="wrap_content"
+            style="@style/H3TextAppearance"
+            tools:text="Dec,2019 - Present"
+            android:layout_width="113dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
+            android:id="@+id/tv_joined"
             app:layout_constraintEnd_toStartOf="@+id/linearLayout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-            app:layout_constraintTop_toTopOf="@+id/linearLayout"/>
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            app:layout_constraintBottom_toTopOf="@+id/tv_terminated"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:textAlignment="center"/>
 
     <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_weight="1"
             android:orientation="vertical"
             android:layout_height="wrap_content"
             android:id="@+id/linearLayout"
-            app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintEnd_toStartOf="@+id/imageView2"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_joined"
+            app:layout_constraintEnd_toStartOf="@+id/iv_company"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:background="@drawable/light_green_bg"
@@ -40,30 +42,47 @@
             >
 
         <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_designation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Android Developer"
+                tools:text="Android Developer"
                 style="@style/H3TextAppearance"
-                />
+                android:ellipsize="end"
+                android:maxLines="1"/>
 
         <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_company"
                 android:layout_marginTop="4dp"
                 style="@style/H4TextAppearance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Go Zayaan Pvt. Ltd."/>
+                android:ellipsize="end"
+                tools:text="Go Zayaan Pvt. Ltd."/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <ImageView
             app:layout_constraintHorizontal_weight="1"
             android:layout_width="56dp"
             android:layout_height="0dp"
-            app:srcCompat="@drawable/ic_hotel"
-            android:id="@+id/imageView2"
+            tools:srcCompat="@drawable/ic_hotel"
+            android:id="@+id/iv_company"
             app:layout_constraintStart_toEndOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
             app:layout_constraintTop_toTopOf="@+id/linearLayout"
-            app:layout_constraintDimensionRatio="h,1:1"/>
+            app:layout_constraintDimensionRatio="h,1:1"
+            />
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_terminated"
+            app:layout_constraintTop_toBottomOf="@+id/tv_joined"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="@+id/tv_joined"
+            app:layout_constraintStart_toStartOf="@+id/tv_joined"
+            style="@style/H3TextAppearance"
+            android:textAlignment="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
