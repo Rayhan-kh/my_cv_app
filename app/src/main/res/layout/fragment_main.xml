@@ -9,15 +9,15 @@
         android:background="@color/colorLightBlue"
         tools:context=".view.MainFragment">
 
-<!--    <ImageButton-->
-<!--            android:background="@drawable/transparent_bg"-->
-<!--            android:src="@drawable/ic_arrow_left_white"-->
-<!--            android:layout_width="24dp"-->
-<!--            android:layout_height="24dp"-->
-<!--            android:id="@+id/imageButton"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/guideline4"-->
-<!--            app:layout_constraintStart_toStartOf="@+id/guideline2"-->
-<!--            />-->
+    <!--    <ImageButton-->
+    <!--            android:background="@drawable/transparent_bg"-->
+    <!--            android:src="@drawable/ic_arrow_left_white"-->
+    <!--            android:layout_width="24dp"-->
+    <!--            android:layout_height="24dp"-->
+    <!--            android:id="@+id/imageButton"-->
+    <!--            app:layout_constraintTop_toTopOf="@+id/guideline4"-->
+    <!--            app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--            />-->
 
     <androidx.constraintlayout.widget.Guideline
             android:orientation="vertical"
@@ -43,7 +43,7 @@
     <com.google.android.material.imageview.ShapeableImageView
             android:padding="2dp"
             app:shapeAppearanceOverlay="@style/RoundedImageView"
-            android:layout_width="100dp"
+            android:layout_width="72dp"
             android:layout_height="0dp"
             app:srcCompat="@drawable/ray"
             app:strokeColor="@color/colorWhite"
@@ -55,7 +55,7 @@
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             android:contentDescription="@string/profile_picture"
             app:layout_constraintDimensionRatio="h,1:1"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="8dp"/>
 
     <TextView
             android:textColor="@color/colorWhite"
@@ -99,7 +99,7 @@
                 android:lineSpacingExtra="6sp"
                 style="@style/H3TextAppearance"
                 android:justificationMode="inter_word"
-                android:maxLines="3"
+                android:maxLines="5"
                 android:ellipsize="end"
                 android:textSize="15sp"
                 android:id="@+id/tv_description"
