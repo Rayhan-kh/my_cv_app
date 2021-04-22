@@ -12,5 +12,5 @@
     <string name="personal">Personal</string>
     <string name="internet_error">Not connected to internet!</string>
     <string name="success">Success</string>
-    <string name="see_more"><u>See more</u></string>
+    <string name="see_more">See more</string>
 </resources>
