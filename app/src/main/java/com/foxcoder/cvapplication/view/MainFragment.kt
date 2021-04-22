@@ -6,14 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.databinding.FragmentMainBinding
-import com.foxcoder.cvapplication.utils.experiences
+import com.foxcoder.cvapplication.utils.myExperiences
 
 
 class MainFragment : BaseFragment(), ExperienceClickListener {
 
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
-    private val experienceAdapter = ExperienceAdapter(this, experiences = experiences)
+    private val experienceAdapter = ExperienceAdapter(this, experiences = myExperiences)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
