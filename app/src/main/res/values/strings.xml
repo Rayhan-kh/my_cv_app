@@ -10,6 +10,7 @@
     <string name="projects">Projects</string>
     <string name="skills">Skills</string>
     <string name="personal">Personal</string>
-    <string name="internet_error">Not connected to intenet!</string>
+    <string name="internet_error">Not connected to internet!</string>
     <string name="success">Success</string>
+    <string name="see_more"><u>See more</u></string>
 </resources>
