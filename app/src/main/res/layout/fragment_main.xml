@@ -119,7 +119,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintHorizontal_bias="0.0"
-                style="@style/H2Avenir"/>
+                style="@style/H1TextAppearance"/>
 
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_experiences"

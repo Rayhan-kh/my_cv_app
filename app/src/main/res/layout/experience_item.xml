@@ -9,6 +9,7 @@
     <androidx.appcompat.widget.AppCompatTextView
             app:layout_constraintHorizontal_weight="1"
             style="@style/H3TextAppearance"
+            app:fontFamily="@font/avenir_regular"
             tools:text="Dec,2019 - Present"
             android:layout_width="113dp"
             android:layout_height="wrap_content"
@@ -42,18 +43,18 @@
             >
 
         <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_designation"
+                android:id="@+id/tv_company"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Android Developer"
-                style="@style/H3TextAppearance"
+                style="@style/H2BoldTextAppearance"
                 android:ellipsize="end"
                 android:maxLines="1"/>
 
         <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_company"
-                android:layout_marginTop="4dp"
-                style="@style/H4TextAppearance"
+                android:id="@+id/tv_designation"
+                android:layout_marginTop="2dp"
+                style="@style/H3Avenir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
@@ -74,7 +75,7 @@
             app:layout_constraintDimensionRatio="h,1:1"
             />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
             android:text="TextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -84,5 +85,6 @@
             app:layout_constraintEnd_toEndOf="@+id/tv_joined"
             app:layout_constraintStart_toStartOf="@+id/tv_joined"
             style="@style/H3TextAppearance"
+            app:fontFamily="@font/avenir_regular"
             android:textAlignment="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

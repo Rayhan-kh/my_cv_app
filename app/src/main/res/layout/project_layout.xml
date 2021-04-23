@@ -62,8 +62,7 @@
             android:maxLines="2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintBottom_toTopOf="@+id/tb_see_more"
-            style="@style/H2TextAppearance"
-            android:textSize="14sp"
+            style="@style/H3Avenir"
             android:layout_marginTop="4dp"/>
 
     <androidx.appcompat.widget.AppCompatTextView
