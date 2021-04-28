@@ -13,4 +13,10 @@
     <string name="internet_error">Not connected to internet!</string>
     <string name="success">Success</string>
     <string name="see_more">See more</string>
+    <string name="programming_languages">Programming Languages</string>
+    <string name="design_patterns">Design Patterns</string>
+    <string name="ide">IDE</string>
+    <string name="operating_system">Operating System</string>
+    <string name="version_control_tools">Version Control Tools</string>
+    <string name="design_tools">Design Tools</string>
 </resources>
