@@ -16,18 +16,15 @@
             android:src="@drawable/ic_direction"/>
 
     <com.google.android.material.textview.MaterialTextView
-            android:letterSpacing="0.23"
             android:layout_marginStart="8dp"
             android:text="@string/description"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="6sp"
+            android:lineSpacingExtra="4sp"
             style="@style/H3TextAppearance"
-            android:justificationMode="inter_word"
-            android:maxLines="2"
+            android:maxLines="3"
             android:ellipsize="end"
-            android:textSize="14sp"
             android:id="@+id/tv_core_skill"
             />
 

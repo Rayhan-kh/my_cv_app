@@ -12,7 +12,7 @@
               android:layout_height="wrap_content">
 
     <androidx.appcompat.widget.AppCompatTextView
-            app:letterSpacing="0.5"
+            android:letterSpacing="0.02"
             tools:text="Kotlin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

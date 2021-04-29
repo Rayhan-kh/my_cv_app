@@ -83,3 +83,17 @@ val myProjects = listOf(
         storeUrl = "https://play.google.com/store/apps/details?id=com.truckpathao.www",
     )
 )
+val coreSkills = listOf(
+    "Ability to multitask with strict time constraints, budgets and business goals.",
+    "Writing efficient code.", "Consistently delivers working software that meets standards.",
+    "Efficiently executes assigned task with proper documentation and coding structure.",
+    "Ensures applications meet the acceptance criteria.",
+    "Prioritizes programming work and assigns tasks.",
+    "Appropriately deals with problems in the team.",
+    "Collaborates closely with customers.",
+    "Monitors timeliness of attendance at team meetings.",
+    "Experienced Android application and integrating android payment SDKs.",
+    "Researching different software programs, maintaining software documentation.",
+    "Knowledge and experience of fundamental Android components and libraries like Dependency Injection, Live Data, View Binding, Navigation component etc  "
+
+)
