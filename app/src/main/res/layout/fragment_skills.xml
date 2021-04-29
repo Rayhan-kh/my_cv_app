@@ -74,7 +74,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            style="@style/H2BoldTextAppearance"/>
+            style="@style/H2Avenir"/>
 
     <androidx.recyclerview.widget.RecyclerView
             app:layoutManager="com.google.android.flexbox.FlexboxLayoutManager"

@@ -28,7 +28,7 @@
     <color name="colorSecondaryButtonBg">#0D1C3C6B</color>
     <color name="colorSubTitleText">#05293C</color>
     <color name="db6">#728DB6</color>
-    <color name="lightGreen">#E0F8E7</color>
+    <color name="flex_bg">#E0F8E7</color>
     <color name="colorTeal">#009997</color>
     <color name="colorDropDownFill">#F8FAFC</color>
     <color name="colorDropDownStroke">#E1E8EE</color>
