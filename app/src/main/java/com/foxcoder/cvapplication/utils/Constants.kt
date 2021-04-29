@@ -95,5 +95,11 @@ val coreSkills = listOf(
     "Experienced Android application and integrating android payment SDKs.",
     "Researching different software programs, maintaining software documentation.",
     "Knowledge and experience of fundamental Android components and libraries like Dependency Injection, Live Data, View Binding, Navigation component etc  "
-
 )
+
+val programmingLanguages = listOf("Kotlin", "java", "C++", "Dart", "Swift")
+val ide = listOf("Intellij", "VS Code", "Android Studio")
+val os = listOf("Windows", "macOS", "linux")
+val designTools = listOf("Adobe XD", "Adobe Illustrator", "Adobe InDesign", "Figma")
+val vsc = listOf("GitHub", "BitBucket", "Source Tree")
+val designPattern = listOf("MVP", "MVVM", "Google Material Design")
