@@ -28,7 +28,7 @@
             android:maxLines="2"
             android:ellipsize="end"
             android:textSize="14sp"
-            android:id="@+id/tv_description"
+            android:id="@+id/tv_core_skill"
             />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
