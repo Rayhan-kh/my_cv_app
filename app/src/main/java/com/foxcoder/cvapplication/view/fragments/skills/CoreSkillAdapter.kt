@@ -1,4 +1,4 @@
-package com.foxcoder.cvapplication.view
+package com.foxcoder.cvapplication.view.fragments.skills
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

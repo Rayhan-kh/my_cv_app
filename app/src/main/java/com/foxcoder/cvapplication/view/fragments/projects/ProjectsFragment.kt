@@ -1,14 +1,16 @@
-package com.foxcoder.cvapplication.view
+package com.foxcoder.cvapplication.view.fragments.projects
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.databinding.FragmentProjectsBinding
 import com.foxcoder.cvapplication.models.Project
 import com.foxcoder.cvapplication.utils.myProjects
+import com.foxcoder.cvapplication.utils.setLightStatusBar
+import com.foxcoder.cvapplication.view.base_classes.BaseFragment
+import com.foxcoder.cvapplication.view.ProjectClickListener
+import com.foxcoder.cvapplication.view.ProjectListAdapter
 
 
 class ProjectsFragment : BaseFragment(), ProjectClickListener {

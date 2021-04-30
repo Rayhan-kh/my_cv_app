@@ -5,22 +5,22 @@
             android:id="@+id/main_nav_graph"
             app:startDestination="@id/main_fragment">
     <fragment
-            android:name="com.foxcoder.cvapplication.view.MainFragment"
+            android:name="com.foxcoder.cvapplication.view.fragments.home.MainFragment"
             android:id="@+id/main_fragment"
             tools:layout="@layout/fragment_main"/>
     <fragment
             android:id="@+id/skill_fragment"
-            android:name="com.foxcoder.cvapplication.view.SkillsFragment"
+            android:name="com.foxcoder.cvapplication.view.fragments.skills.SkillsFragment"
             tools:layout="@layout/fragment_skills"/>
 
     <fragment
             android:id="@+id/personal_fragment"
-            android:name="com.foxcoder.cvapplication.view.PersonalFragment"
+            android:name="com.foxcoder.cvapplication.view.fragments.profile.PersonalFragment"
             tools:layout="@layout/fragment_personal"/>
 
     <fragment
             android:id="@+id/project_fragment"
-            android:name="com.foxcoder.cvapplication.view.ProjectsFragment"
+            android:name="com.foxcoder.cvapplication.view.fragments.projects.ProjectsFragment"
             tools:layout="@layout/fragment_projects"/>
     <action
             android:id="@+id/action_global_skill_fragment"

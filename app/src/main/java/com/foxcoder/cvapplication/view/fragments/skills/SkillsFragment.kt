@@ -1,4 +1,4 @@
-package com.foxcoder.cvapplication.view
+package com.foxcoder.cvapplication.view.fragments.skills
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -24,7 +24,7 @@ class SkillsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentSkillsBinding.inflate(layoutInflater, container, false)
         return binding.root
     }

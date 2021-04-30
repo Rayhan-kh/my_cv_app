@@ -1,4 +1,4 @@
-package com.foxcoder.cvapplication.view
+package com.foxcoder.cvapplication.view.fragments.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

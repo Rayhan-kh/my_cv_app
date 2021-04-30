@@ -1,11 +1,8 @@
-package com.foxcoder.cvapplication.view
+package com.foxcoder.cvapplication.utils
 
 import android.app.Activity
 import android.content.Context
-import android.graphics.Bitmap
-import android.graphics.Canvas
-import android.graphics.Color
-import android.graphics.PorterDuff
+import android.graphics.*
 import android.graphics.drawable.Drawable
 import android.os.Build
 import android.view.View
@@ -93,3 +90,7 @@ internal fun Context.getColorCompat(@ColorRes color: Int) = ContextCompat.getCol
 
 internal fun TextView.setTextColorRes(@ColorRes color: Int) =
     setTextColor(context.getColorCompat(color))
+
+fun TextView.underline() {
+    paintFlags = paintFlags or Paint.UNDERLINE_TEXT_FLAG
+}

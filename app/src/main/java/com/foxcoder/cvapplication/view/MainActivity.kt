@@ -1,12 +1,13 @@
-package com.foxcoder.cvapplication
+package com.foxcoder.cvapplication.view
 
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.foxcoder.cvapplication.R
 
 import com.foxcoder.cvapplication.databinding.ActivityMainBinding
-import com.foxcoder.cvapplication.view.BaseActivity
+import com.foxcoder.cvapplication.view.base_classes.BaseActivity
 
 class MainActivity : BaseActivity() {
 

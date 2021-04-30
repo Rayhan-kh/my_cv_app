@@ -100,6 +100,6 @@ val coreSkills = listOf(
 val programmingLanguages = listOf("Kotlin", "java", "C++", "Dart", "Swift")
 val ide = listOf("Intellij", "VS Code", "Android Studio")
 val os = listOf("Windows", "macOS", "linux")
-val designTools = listOf("Adobe XD", "Adobe Illustrator", "Adobe InDesign", "Figma")
+val designTools = listOf("Figma", "Adobe XD", "Adobe Illustrator", "Adobe InDesign", "Adobe Photoshop")
 val vsc = listOf("GitHub", "BitBucket", "Source Tree")
 val designPattern = listOf("MVP", "MVVM", "Google Material Design")

@@ -1,4 +1,4 @@
-package com.foxcoder.cvapplication.view
+package com.foxcoder.cvapplication.view.base_classes
 
 import androidx.appcompat.app.AppCompatActivity
 

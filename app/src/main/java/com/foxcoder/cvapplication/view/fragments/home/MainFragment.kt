@@ -1,4 +1,4 @@
-package com.foxcoder.cvapplication.view
+package com.foxcoder.cvapplication.view.fragments.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.databinding.FragmentMainBinding
+import com.foxcoder.cvapplication.utils.clearLightStatusBar
 import com.foxcoder.cvapplication.utils.myExperiences
+import com.foxcoder.cvapplication.view.base_classes.BaseFragment
+import com.foxcoder.cvapplication.view.fragments.projects.ExperienceAdapter
+import com.foxcoder.cvapplication.view.fragments.projects.ExperienceClickListener
 
 
 class MainFragment : BaseFragment(), ExperienceClickListener {
