@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.databinding.FragmentPersonalBinding
+import com.foxcoder.cvapplication.utils.setLightStatusBar
 
 class PersonalFragment : Fragment() {
 
@@ -22,6 +23,7 @@ class PersonalFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        setLightStatusBar(view,requireActivity())
         initViewItems()
         super.onViewCreated(view, savedInstanceState)
     }
