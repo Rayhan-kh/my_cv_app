@@ -106,9 +106,9 @@ val vsc = listOf("GitHub", "BitBucket", "Source Tree")
 val designPattern = listOf("MVP", "MVVM", "Google Material Design")
 
 val personalDataItems = listOf(
-    PersonalDataItem("Education", R.drawable.ic_add),
-    PersonalDataItem("Training", R.drawable.ic_add),
-    PersonalDataItem("Linguistic Proficiency", R.drawable.ic_add),
-    PersonalDataItem("Hobbies", R.drawable.ic_add),
-    PersonalDataItem("Social Handles", R.drawable.ic_add),
+    PersonalDataItem("Academic Accomplishments", R.drawable.ic_education),
+    PersonalDataItem("Professional Trainings", R.drawable.ic_certification),
+    PersonalDataItem("Languages I Speak", R.drawable.ic_language),
+    PersonalDataItem("Leisure Interests", R.drawable.ic_hobbies),
+    PersonalDataItem("Social Handles", R.drawable.ic_like),
 )

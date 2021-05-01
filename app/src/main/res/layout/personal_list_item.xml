@@ -15,8 +15,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             app:layout_constraintEnd_toStartOf="@+id/iv_personal_item"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="16dp"
@@ -32,7 +32,7 @@
             android:paddingBottom="8dp"/>
 
     <ImageView
-            android:layout_width="16dp"
+            android:layout_width="24dp"
             android:layout_height="0dp"
             app:srcCompat="@drawable/ic_cross"
             android:id="@+id/iv_personal_item"

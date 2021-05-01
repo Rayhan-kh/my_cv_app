@@ -11,9 +11,9 @@
     <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="0dp"
             android:layout_weight="0.1"
-            android:layout_height="14dp"
+            android:layout_height="16dp"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_direction"/>
+            android:src="@drawable/ic_done"/>
 
     <com.google.android.material.textview.MaterialTextView
             android:layout_marginStart="8dp"
