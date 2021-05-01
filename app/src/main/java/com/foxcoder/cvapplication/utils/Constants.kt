@@ -2,6 +2,7 @@ package com.foxcoder.cvapplication.utils
 
 import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.models.Experience
+import com.foxcoder.cvapplication.models.PersonalDataItem
 import com.foxcoder.cvapplication.models.Project
 
 
@@ -103,3 +104,11 @@ val os = listOf("Windows", "macOS", "linux")
 val designTools = listOf("Figma", "Adobe XD", "Adobe Illustrator", "Adobe InDesign", "Adobe Photoshop")
 val vsc = listOf("GitHub", "BitBucket", "Source Tree")
 val designPattern = listOf("MVP", "MVVM", "Google Material Design")
+
+val personalDataItems = listOf(
+    PersonalDataItem("Education", R.drawable.ic_add),
+    PersonalDataItem("Training", R.drawable.ic_add),
+    PersonalDataItem("Linguistic Proficiency", R.drawable.ic_add),
+    PersonalDataItem("Hobbies", R.drawable.ic_add),
+    PersonalDataItem("Social Handles", R.drawable.ic_add),
+)

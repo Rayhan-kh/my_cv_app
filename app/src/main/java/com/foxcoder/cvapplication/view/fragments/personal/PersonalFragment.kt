@@ -7,12 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.databinding.FragmentPersonalBinding
+import com.foxcoder.cvapplication.utils.personalDataItems
 import com.foxcoder.cvapplication.utils.setLightStatusBar
 
 class PersonalFragment : Fragment() {
 
     private var _binding: FragmentPersonalBinding? = null
     private val binding get() = _binding!!
+    private val personalListAdapter = PersonalListAdapter(personalDataItems)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,12 +25,17 @@ class PersonalFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        setLightStatusBar(view,requireActivity())
+        setLightStatusBar(view, requireActivity())
         initViewItems()
         super.onViewCreated(view, savedInstanceState)
     }
 
     private fun initViewItems() {
+        binding.rvPersonals.apply {
+            hasFixedSize()
+            isNestedScrollingEnabled = true
+            adapter = personalListAdapter
+        }
 
     }
 
