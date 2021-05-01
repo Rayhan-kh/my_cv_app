@@ -19,4 +19,6 @@
     <string name="operating_system">Operating System</string>
     <string name="version_control_tools">Version Control Tools</string>
     <string name="design_tools">Design Tools</string>
+    <string name="native_android_developer">Native Android Developer</string>
+    <string name="rayhan_khan">Rayhan Khan</string>
 </resources>

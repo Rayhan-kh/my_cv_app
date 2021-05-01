@@ -15,7 +15,7 @@
 
     <fragment
             android:id="@+id/personal_fragment"
-            android:name="com.foxcoder.cvapplication.view.fragments.profile.PersonalFragment"
+            android:name="com.foxcoder.cvapplication.view.fragments.personal.PersonalFragment"
             tools:layout="@layout/fragment_personal"/>
 
     <fragment
