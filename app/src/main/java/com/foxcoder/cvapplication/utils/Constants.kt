@@ -114,30 +114,27 @@ val personalDataItems = listOf(
     PersonalDataItem("Social Handles", R.drawable.ic_like),
 )
 
-val academicAccomplishmentItems= listOf(
+val academicAccomplishmentItems = listOf(
     AcademicAccomplishmentItem(
-        schoolName ="East West University, Dhaka",
+        schoolName = "East West University, Dhaka",
         degree = "Bachelor of Science (BSc)",
-        cgpa = 2.72f,
-        cgpaMax = 4f,
+        cgpa = "2.72 (With 79% marks) Out of 4",
         passingYear = "2015",
         department = "Computer Science and Engineering"
     ),
 
     AcademicAccomplishmentItem(
-        schoolName ="B.A.F. Shaheen College, Dhaka",
+        schoolName = "B.A.F. Shaheen College, Dhaka",
         degree = "Higher Secondary Certificate (HSC)",
-        cgpa = 4.3f,
-        cgpaMax = 5f,
+        cgpa = "4.3 Out of 5",
         passingYear = "2010",
         department = "Science Department"
     ),
 
     AcademicAccomplishmentItem(
-        schoolName ="Chandpur Hasan Ali Govt. High School",
+        schoolName = "Chandpur Hasan Ali Govt. High School",
         degree = "Secondary Certificate (SSC)",
-        cgpa = 5f,
-        cgpaMax = 5f,
+        cgpa = "5 Out of 5 with Scholarship",
         passingYear = "2008",
         department = "Science Department"
     ),

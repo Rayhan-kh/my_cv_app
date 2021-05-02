@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintGuide_begin="16dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline4"
+            app:layout_constraintGuide_end="16dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline10"
+            app:layout_constraintGuide_begin="16dp"/>
+
+    <TextView
+            tools:text="2015"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_passing_year"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline10"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            style="@style/H2BoldTextAppearance"
+            android:layout_marginTop="16dp"/>
+
+    <TextView
+            tools:text="Bachelor of Science (BSc)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_degree"
+            app:layout_constraintTop_toBottomOf="@+id/tv_passing_year"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            android:layout_marginTop="16dp"
+            style="@style/H2TextAppearance"/>
+
+    <TextView
+            tools:text="Computer Science and Engineering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_department"
+            app:layout_constraintTop_toBottomOf="@+id/tv_degree"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            style="@style/H3TextAppearance"
+            android:layout_marginTop="4dp"/>
+
+    <TextView
+            tools:text="East West University, Dhaka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_institute"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_department"
+            style="@style/H3TextAppearance"
+            android:layout_marginTop="4dp"/>
+
+    <TextView
+            tools:text="2.72 (With 79% marks) Out of 4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cgpa"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_institute"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            style="@style/H3TextAppearance"
+            android:layout_marginTop="4dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

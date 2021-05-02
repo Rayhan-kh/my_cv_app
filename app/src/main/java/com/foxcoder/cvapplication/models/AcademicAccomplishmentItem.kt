@@ -5,6 +5,5 @@ data class AcademicAccomplishmentItem(
     var passingYear: String,
     var department: String,
     var degree: String,
-    var cgpa: Float,
-    var cgpaMax:Float
+    var cgpa: String,
 )
