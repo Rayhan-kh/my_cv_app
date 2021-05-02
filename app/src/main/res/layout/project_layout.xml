@@ -5,11 +5,10 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/light_green_bg"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp">
 
@@ -30,7 +29,7 @@
             app:layout_constraintDimensionRatio="h,1:1"/>
 
     <TextView
-            android:text="Project Name"
+            tools:text="Project Name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tv_project_name"
@@ -49,7 +48,7 @@
     <TextView
             android:textColor="@color/colorTextSecondary"
             android:ellipsize="end"
-            android:text="A Project I made many years ago.May be I forgot for whome or what I am writing"
+            tools:text="A Project I made many years ago.May be I forgot for whome or what I am writing"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tv_project_desc"

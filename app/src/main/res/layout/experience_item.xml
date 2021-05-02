@@ -3,25 +3,11 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content">
 
-    <androidx.appcompat.widget.AppCompatTextView
-            app:layout_constraintHorizontal_weight="1"
-            style="@style/H3TextAppearance"
-            app:fontFamily="@font/avenir_regular"
-            tools:text="Dec,2019 - Present"
-            android:layout_width="113dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_joined"
-            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintTop_toTopOf="@+id/linearLayout"
-            app:layout_constraintBottom_toTopOf="@+id/tv_terminated"
-            app:layout_constraintVertical_chainStyle="packed"
-            android:textAlignment="center"/>
 
     <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="0dp"
@@ -30,16 +16,12 @@
             android:orientation="vertical"
             android:layout_height="wrap_content"
             android:id="@+id/linearLayout"
-            app:layout_constraintStart_toEndOf="@+id/tv_joined"
             app:layout_constraintEnd_toStartOf="@+id/iv_company"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:background="@drawable/light_green_bg"
             android:padding="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             >
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -52,13 +34,27 @@
                 android:maxLines="1"/>
 
         <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="4dp"
+                app:layout_constraintHorizontal_weight="1"
+                style="@style/H2TextAppearance"
+                app:fontFamily="@font/avenir_regular"
+                tools:text="Dec,2019 - Present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_joined"
+                android:ellipsize="end"
+                />
+
+        <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_designation"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="4dp"
                 style="@style/H3Avenir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 tools:text="Go Zayaan Pvt. Ltd."/>
+
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <ImageView
@@ -73,18 +69,6 @@
             app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
             app:layout_constraintTop_toTopOf="@+id/linearLayout"
             app:layout_constraintDimensionRatio="h,1:1"
-            />
+            android:layout_marginEnd="16dp"/>
 
-    <androidx.appcompat.widget.AppCompatTextView
-            android:text="TextView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_terminated"
-            app:layout_constraintTop_toBottomOf="@+id/tv_joined"
-            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-            app:layout_constraintEnd_toEndOf="@+id/tv_joined"
-            app:layout_constraintStart_toStartOf="@+id/tv_joined"
-            style="@style/H3TextAppearance"
-            app:fontFamily="@font/avenir_regular"
-            android:textAlignment="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

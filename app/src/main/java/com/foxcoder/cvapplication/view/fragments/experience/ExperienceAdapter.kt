@@ -1,4 +1,4 @@
-package com.foxcoder.cvapplication.view.fragments.projects
+package com.foxcoder.cvapplication.view.fragments.experience
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -16,11 +16,10 @@ class ExperienceAdapter(private val listener: ExperienceClickListener, val exper
             {
 
                 if (experience.currentlyEmployed) {
-                    tvTerminated.text = "Present"
+                    "${experience.joinDate} - Present".also { tvJoined.text = it }
                 } else {
-                    tvTerminated.text = experience.terminatedDate
+                    "${experience.joinDate} - ${experience.terminatedDate}".also { tvJoined.text = it }
                 }
-                tvJoined.text = experience.joinDate
 
                 tvCompany.text = experience.companyName
                 tvDesignation.text = experience.designation

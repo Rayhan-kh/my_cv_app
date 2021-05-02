@@ -3,9 +3,9 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/main_nav_graph"
-            app:startDestination="@id/main_fragment">
+            app:startDestination="@id/personal_fragment">
     <fragment
-            android:name="com.foxcoder.cvapplication.view.fragments.home.MainFragment"
+            android:name="com.foxcoder.cvapplication.view.fragments.experience.ExperienceFragment"
             android:id="@+id/main_fragment"
             tools:layout="@layout/fragment_main"/>
     <fragment

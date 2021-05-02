@@ -1,4 +1,4 @@
-package com.foxcoder.cvapplication.view.fragments.home
+package com.foxcoder.cvapplication.view.fragments.experience
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,12 +8,11 @@ import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.databinding.FragmentMainBinding
 import com.foxcoder.cvapplication.utils.clearLightStatusBar
 import com.foxcoder.cvapplication.utils.myExperiences
+import com.foxcoder.cvapplication.utils.setLightStatusBar
 import com.foxcoder.cvapplication.view.base_classes.BaseFragment
-import com.foxcoder.cvapplication.view.fragments.projects.ExperienceAdapter
-import com.foxcoder.cvapplication.view.fragments.projects.ExperienceClickListener
 
 
-class MainFragment : BaseFragment(), ExperienceClickListener {
+class ExperienceFragment : BaseFragment(), ExperienceClickListener {
 
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
@@ -28,10 +27,9 @@ class MainFragment : BaseFragment(), ExperienceClickListener {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        clearLightStatusBar(requireActivity(), R.color.colorLightBlue)
-
+        setLightStatusBar(view,requireActivity())
         initViewItems()
+        super.onViewCreated(view, savedInstanceState)
     }
 
     private fun initViewItems() {
