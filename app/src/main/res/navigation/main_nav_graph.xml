@@ -16,7 +16,11 @@
     <fragment
             android:id="@+id/personal_fragment"
             android:name="com.foxcoder.cvapplication.view.fragments.personal.PersonalFragment"
-            tools:layout="@layout/fragment_personal"/>
+            tools:layout="@layout/fragment_personal">
+        <action
+                android:id="@+id/action_personal_fragment_to_academic_dialog"
+                app:destination="@id/academic_dialog"/>
+    </fragment>
 
     <fragment
             android:id="@+id/project_fragment"
@@ -34,5 +38,10 @@
     <action
             android:id="@+id/action_global_project_fragment"
             app:destination="@id/project_fragment"/>
+
+    <dialog android:id="@+id/academic_dialog"
+            android:name="com.foxcoder.cvapplication.view.fragments.personal.AcademicDialog"
+            tools:layout="@layout/fragment_academic"
+            />
 
 </navigation>
