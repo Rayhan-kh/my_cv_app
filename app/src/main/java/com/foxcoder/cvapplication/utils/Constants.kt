@@ -1,6 +1,7 @@
 package com.foxcoder.cvapplication.utils
 
 import com.foxcoder.cvapplication.R
+import com.foxcoder.cvapplication.models.AcademicAccomplishmentItem
 import com.foxcoder.cvapplication.models.Experience
 import com.foxcoder.cvapplication.models.PersonalDataItem
 import com.foxcoder.cvapplication.models.Project
@@ -111,4 +112,33 @@ val personalDataItems = listOf(
     PersonalDataItem("Languages I Speak", R.drawable.ic_language),
     PersonalDataItem("Leisure Interests", R.drawable.ic_hobbies),
     PersonalDataItem("Social Handles", R.drawable.ic_like),
+)
+
+val academicAccomplishmentItems= listOf(
+    AcademicAccomplishmentItem(
+        schoolName ="East West University, Dhaka",
+        degree = "Bachelor of Science (BSc)",
+        cgpa = 2.72f,
+        cgpaMax = 4f,
+        passingYear = "2015",
+        department = "Computer Science and Engineering"
+    ),
+
+    AcademicAccomplishmentItem(
+        schoolName ="B.A.F. Shaheen College, Dhaka",
+        degree = "Higher Secondary Certificate (HSC)",
+        cgpa = 4.3f,
+        cgpaMax = 5f,
+        passingYear = "2010",
+        department = "Science Department"
+    ),
+
+    AcademicAccomplishmentItem(
+        schoolName ="Chandpur Hasan Ali Govt. High School",
+        degree = "Secondary Certificate (SSC)",
+        cgpa = 5f,
+        cgpaMax = 5f,
+        passingYear = "2008",
+        department = "Science Department"
+    ),
 )
