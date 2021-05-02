@@ -7,13 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.databinding.FragmentAcademicBinding
+import com.foxcoder.cvapplication.utils.academicAccomplishmentItems
 import com.foxcoder.cvapplication.view.base_classes.BaseDialogFragment
+import com.foxcoder.cvapplication.view.fragments.personal.adapters.AcademicAccomplishmentListAdapter
 
 
 class AcademicDialog : BaseDialogFragment() {
 
     private var _binding: FragmentAcademicBinding? = null
     private val binding get() = _binding!!
+    private val aaAdapter = AcademicAccomplishmentListAdapter(academicAccomplishmentItems)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,6 +24,18 @@ class AcademicDialog : BaseDialogFragment() {
     ): View {
         _binding = FragmentAcademicBinding.inflate(layoutInflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        with(binding)
+        {
+            rvAcademic.apply {
+                hasFixedSize()
+                isNestedScrollingEnabled = true
+                adapter = aaAdapter
+            }
+        }
+        super.onViewCreated(view, savedInstanceState)
     }
 
 }
