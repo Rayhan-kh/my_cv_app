@@ -59,6 +59,11 @@
                     android:text="@string/academic_accomplishments"/>
 
         </RelativeLayout>
+        <View
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorDivider"/>
 
         <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
@@ -68,6 +73,8 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                tools:listitem="@layout/academic_accomplishment_view_item"
                 android:id="@+id/rv_academic"/>
     </LinearLayout>
 

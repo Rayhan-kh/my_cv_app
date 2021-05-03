@@ -3,11 +3,11 @@ package com.foxcoder.cvapplication.view.base_classes
 import android.app.Dialog
 import android.os.Bundle
 import android.widget.FrameLayout
-import androidx.fragment.app.DialogFragment
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-open class BaseDialogFragment : DialogFragment() {
+open class BaseDialogFragment : BottomSheetDialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val dialog = super.onCreateDialog(savedInstanceState) as BottomSheetDialog

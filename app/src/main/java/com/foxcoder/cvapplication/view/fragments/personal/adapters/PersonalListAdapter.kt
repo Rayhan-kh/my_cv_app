@@ -1,4 +1,4 @@
-package com.foxcoder.cvapplication.view.fragments.personal
+package com.foxcoder.cvapplication.view.fragments.personal.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,11 +7,16 @@ import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.databinding.PersonalListItemBinding
 import com.foxcoder.cvapplication.models.PersonalDataItem
 
-class PersonalListAdapter(private val personalDataItems: List<PersonalDataItem>) :
+class PersonalListAdapter(private val personalDataItems: List<PersonalDataItem>, val clickListener: PersonalItemClickListener) :
     RecyclerView.Adapter<PersonalListAdapter.PersonalItemHolder>() {
 
     inner class PersonalItemHolder(val binding: PersonalListItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
+        init {
+            binding.root.setOnClickListener {
+                clickListener.onPersonalItemLicked(layoutPosition)
+            }
+        }
         fun bindPersonalData(personalDataItem: PersonalDataItem) {
             with(binding)
             {
@@ -31,4 +36,8 @@ class PersonalListAdapter(private val personalDataItems: List<PersonalDataItem>)
     }
 
     override fun getItemCount() = personalDataItems.size
+}
+
+interface PersonalItemClickListener {
+    fun onPersonalItemLicked(position: Int)
 }
