@@ -43,4 +43,9 @@ class AcademicDialog : BaseDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
     }
 
+    override fun onDestroyView() {
+        _binding=null
+        super.onDestroyView()
+    }
+
 }
