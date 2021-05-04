@@ -36,6 +36,10 @@ class TrainingDialog : BaseDialogFragment() {
                 isNestedScrollingEnabled = true
                 adapter = trainingListAdapter
             }
+
+            ibBack.setOnClickListener {
+                dismiss()
+            }
         }
         super.onViewCreated(view, savedInstanceState)
     }

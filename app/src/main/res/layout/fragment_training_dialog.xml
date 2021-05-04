@@ -72,6 +72,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
+                tools:listitem="@layout/academic_accomplishment_view_item"
                 android:layout_marginBottom="32dp"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>

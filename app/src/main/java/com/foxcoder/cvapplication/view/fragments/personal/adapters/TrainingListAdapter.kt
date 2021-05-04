@@ -17,9 +17,9 @@ class TrainingListAdapter(private val trainingList: List<TrainingItem>) :
             with(binding)
             {
                 tvPassingYear.text = training.date
-                tvInstitute.text = training.subject
-                tvDegree.text = training.institute
-                tvCgpa.text = training.durations
+                tvDegree.text = training.subject
+                tvInstitute.text = training.durations
+                tvDepartment.text = training.institute
             }
         }
 

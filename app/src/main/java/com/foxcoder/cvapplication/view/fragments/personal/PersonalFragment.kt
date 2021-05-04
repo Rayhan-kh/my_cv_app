@@ -53,6 +53,9 @@ class PersonalFragment : Fragment(), PersonalItemClickListener {
             0 -> {
                 findNavController().navigate(R.id.academic_dialog)
             }
+            1->{
+                findNavController().navigate(R.id.training_dialog)
+            }
         }
     }
 
