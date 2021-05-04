@@ -1,17 +1,13 @@
 package com.foxcoder.cvapplication.view.fragments.personal
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.transition.TransitionListenerAdapter
-import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.databinding.FragmentTrainingDialogBinding
 import com.foxcoder.cvapplication.utils.trainings
 import com.foxcoder.cvapplication.view.base_classes.BaseDialogFragment
 import com.foxcoder.cvapplication.view.fragments.personal.adapters.TrainingListAdapter
-import org.koin.android.ext.android.bind
 
 
 class TrainingDialog : BaseDialogFragment() {
