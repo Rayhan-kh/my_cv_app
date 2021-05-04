@@ -40,6 +40,7 @@ class PersonalFragment : Fragment(), PersonalItemClickListener {
             adapter = personalListAdapter
         }
 
+
     }
 
     override fun onDestroyView() {

@@ -34,6 +34,11 @@ class AcademicDialog : BaseDialogFragment() {
                 isNestedScrollingEnabled = true
                 adapter = aaAdapter
             }
+
+            ibBack.setOnClickListener {
+                dismiss()
+            }
+
         }
         super.onViewCreated(view, savedInstanceState)
     }
