@@ -1,10 +1,7 @@
 package com.foxcoder.cvapplication.utils
 
 import com.foxcoder.cvapplication.R
-import com.foxcoder.cvapplication.models.AcademicAccomplishmentItem
-import com.foxcoder.cvapplication.models.Experience
-import com.foxcoder.cvapplication.models.PersonalDataItem
-import com.foxcoder.cvapplication.models.Project
+import com.foxcoder.cvapplication.models.*
 
 
 val myExperiences =
@@ -138,4 +135,11 @@ val academicAccomplishmentItems = listOf(
         passingYear = "2008",
         department = "Science Department"
     ),
+)
+
+val trainings = listOf(
+    TrainingItem(
+        institute = "Basis Institute of Technology & Management (BITM)",
+        date = "2016", subject = "Professional Android Application Development", durations = "120 Hours"
+    )
 )
