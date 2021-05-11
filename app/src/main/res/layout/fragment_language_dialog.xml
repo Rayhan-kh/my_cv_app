@@ -7,7 +7,7 @@
         app:layout_behavior="@string/bottom_sheet_behavior"
         android:animateLayoutChanges="true"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".view.fragments.personal.adapters.LanguageDialog">
+        tools:context=".view.fragments.personal.LanguageDialog">
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -72,6 +72,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="32dp"
+                tools:listitem="@layout/language_view_item"
                 android:id="@+id/rv_language"/>
     </LinearLayout>
 

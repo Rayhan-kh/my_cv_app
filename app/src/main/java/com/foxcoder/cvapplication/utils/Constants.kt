@@ -143,3 +143,10 @@ val trainings = listOf(
         date = "2016", subject = "Professional Android Application Development", durations = "120 Hours"
     )
 )
+
+val languagesISpeak = listOf(
+    LanguageItem("Bangla", "Native speaker"),
+    LanguageItem("English", "Can read and write professionally"),
+    LanguageItem("Japanese", "Hi-Hello")
+
+)
