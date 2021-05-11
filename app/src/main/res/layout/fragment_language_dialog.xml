@@ -55,7 +55,7 @@
                     android:layout_centerInParent="true"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="8dp"
-                    android:text="@string/academic_accomplishments"/>
+                    android:text="@string/languages_i_speak"/>
 
         </RelativeLayout>
         <View
