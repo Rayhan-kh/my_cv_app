@@ -146,7 +146,7 @@ val trainings = listOf(
 
 val languagesISpeak = listOf(
     LanguageItem("Bangla", "Native speaker"),
-    LanguageItem("English", "Can read and write professionally"),
+    LanguageItem("English", "Can speak and write professionally"),
     LanguageItem("Japanese", "Hi-Hello")
 
 )

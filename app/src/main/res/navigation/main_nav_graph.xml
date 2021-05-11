@@ -23,6 +23,9 @@
         <action
                 android:id="@+id/action_personal_fragment_to_training_dialog"
                 app:destination="@id/training_dialog"/>
+        <action
+                android:id="@+id/action_personal_fragment_to_language_dialog"
+                app:destination="@id/language_dialog"/>
     </fragment>
 
     <fragment
@@ -51,5 +54,9 @@
             android:id="@+id/training_dialog"
             android:name="com.foxcoder.cvapplication.view.fragments.personal.TrainingDialog"
             tools:layout="@layout/fragment_training_dialog"/>
+
+    <dialog android:id="@+id/language_dialog"
+            android:name="com.foxcoder.cvapplication.view.fragments.personal.LanguageDialog"
+            tools:layout="@layout/fragment_language_dialog"/>
 
 </navigation>
