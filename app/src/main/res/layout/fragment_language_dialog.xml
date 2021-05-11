@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/bottom_sheet_behavior"
         android:animateLayoutChanges="true"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        app:layout_behavior="@string/bottom_sheet_behavior"
-        tools:context=".view.fragments.personal.AcademicDialog">
+        tools:context=".view.fragments.personal.adapters.LanguageDialog">
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="@drawable/bottomsheet_round_bg"
             android:elevation="16dp"
@@ -56,7 +55,7 @@
                     android:layout_centerInParent="true"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="8dp"
-                    android:text="@string/languages_i_speak"/>
+                    android:text="@string/academic_accomplishments"/>
 
         </RelativeLayout>
         <View
@@ -64,7 +63,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/colorDivider"/>
-
         <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,9 +72,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="32dp"
-                tools:listitem="@layout/academic_accomplishment_view_item"
-                android:id="@+id/rv_academic"/>
+                android:id="@+id/rv_language"/>
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
