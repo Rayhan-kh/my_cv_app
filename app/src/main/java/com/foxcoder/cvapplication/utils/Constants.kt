@@ -150,3 +150,6 @@ val languagesISpeak = listOf(
     LanguageItem("Japanese", "Hi-Hello")
 
 )
+
+val myHobbies =
+    listOf("IOT","Aquascaping", "Cycling", "Photography" ,"Farming", "Traveling", "Poetry", "Cooking", "DIY projects")
