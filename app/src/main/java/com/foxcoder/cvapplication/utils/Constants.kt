@@ -152,4 +152,4 @@ val languagesISpeak = listOf(
 )
 
 val myHobbies =
-    listOf("IOT","Aquascaping", "Cycling", "Photography" ,"Farming", "Traveling", "Poetry", "Cooking", "DIY projects")
+    listOf("IOT", "Aquascaping", "Cycling", "Farming", "Photography", "Traveling", "Poetry", "Cooking", "DIY projects")
