@@ -230,7 +230,7 @@
                 android:textColor="@color/colorTextUnderlined"
                 android:paddingBottom="2dp"
                 android:paddingTop="2dp"
-                android:text="@string/see_more_"
+                android:text="@string/see_more"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_see_all_skills"

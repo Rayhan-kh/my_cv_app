@@ -11,7 +11,11 @@
     <fragment
             android:id="@+id/skill_fragment"
             android:name="com.foxcoder.cvapplication.view.fragments.skills.SkillsFragment"
-            tools:layout="@layout/fragment_skills"/>
+            tools:layout="@layout/fragment_skills">
+        <action
+                android:id="@+id/action_skill_fragment_to_core_skill_dialog"
+                app:destination="@id/core_skill_dialog"/>
+    </fragment>
 
     <fragment
             android:id="@+id/personal_fragment"
@@ -65,5 +69,9 @@
     <dialog android:name="com.foxcoder.cvapplication.view.fragments.personal.HobbyDialog"
             android:id="@+id/hobby_dialog"
             tools:layout="@layout/fragment_hobby_dialog"/>
+
+    <dialog android:id="@+id/core_skill_dialog"
+            android:name="com.foxcoder.cvapplication.view.fragments.skills.CoreSkillDialog"
+            tools:layout="@layout/core_skill_dialog"/>
 
 </navigation>

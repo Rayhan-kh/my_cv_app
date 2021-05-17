@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.foxcoder.cvapplication.R
 import com.foxcoder.cvapplication.databinding.FragmentSkillsBinding
 import com.foxcoder.cvapplication.utils.*
 
@@ -75,8 +77,10 @@ class SkillsFragment : Fragment() {
             }
 
             tvSeeAllSkills.setOnClickListener {
-
+                findNavController().navigate(R.id.core_skill_dialog)
             }
+
+            tvSeeAllSkills.underline()
         }
     }
 
