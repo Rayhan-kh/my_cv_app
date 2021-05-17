@@ -13,7 +13,7 @@ class SkillsFragment : Fragment() {
 
     private var _binding: FragmentSkillsBinding? = null
     private val binding get() = _binding!!
-    private val coreSkillAdapter = CoreSkillAdapter(coreSkills)
+    private val coreSkillAdapter = CoreSkillAdapter(coreSkills.subList(0,3))
     private val ideAdapter = FlexItemAdapter(ide)
     private val osAdapter = FlexItemAdapter(os)
     private val programmingLangAdapter = FlexItemAdapter(programmingLanguages)
@@ -72,6 +72,10 @@ class SkillsFragment : Fragment() {
                 hasFixedSize()
                 isNestedScrollingEnabled = true
                 adapter = vcsAdapter
+            }
+
+            tvSeeAllSkills.setOnClickListener {
+
             }
         }
     }
