@@ -46,7 +46,7 @@
                     android:paddingEnd="8dp"
                     android:paddingBottom="8dp"
                     android:scaleType="fitStart"
-                    android:src="@drawable/ic_arrow_left"/>
+                    android:src="@drawable/ic_cross"/>
 
             <androidx.appcompat.widget.AppCompatTextView
                     style="@style/H1TextAppearance"
