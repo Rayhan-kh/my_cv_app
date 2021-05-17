@@ -23,7 +23,6 @@
             android:layout_height="wrap_content"
             android:lineSpacingExtra="4sp"
             style="@style/H3TextAppearance"
-            android:maxLines="3"
             android:ellipsize="end"
             android:id="@+id/tv_core_skill"
             />
