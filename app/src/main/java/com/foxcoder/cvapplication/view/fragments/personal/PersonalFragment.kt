@@ -59,9 +59,8 @@ class PersonalFragment : Fragment(), PersonalItemClickListener {
             2 -> {
                 findNavController().navigate(R.id.language_dialog)
             }
-            3 ->
-                findNavController().navigate(R.id.hobby_dialog)
-            }
+            3 -> findNavController().navigate(R.id.hobby_dialog)
+
             4 -> findNavController().navigate(R.id.contactDialog)
         }
     }
