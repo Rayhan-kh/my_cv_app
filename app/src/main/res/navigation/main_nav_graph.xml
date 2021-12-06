@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/main_nav_graph"
-            app:startDestination="@id/personal_fragment">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_nav_graph"
+        app:startDestination="@id/personal_fragment">
     <fragment
             android:name="com.foxcoder.cvapplication.view.fragments.experience.ExperienceFragment"
             android:id="@+id/main_fragment"
-            tools:layout="@layout/fragment_main"/>
+            tools:layout="@layout/fragment_main" />
     <fragment
             android:id="@+id/skill_fragment"
             android:name="com.foxcoder.cvapplication.view.fragments.skills.SkillsFragment"
             tools:layout="@layout/fragment_skills">
         <action
                 android:id="@+id/action_skill_fragment_to_core_skill_dialog"
-                app:destination="@id/core_skill_dialog"/>
+                app:destination="@id/core_skill_dialog" />
     </fragment>
 
     <fragment
@@ -23,55 +23,62 @@
             tools:layout="@layout/fragment_personal">
         <action
                 android:id="@+id/action_personal_fragment_to_academic_dialog"
-                app:destination="@id/academic_dialog"/>
+                app:destination="@id/academic_dialog" />
         <action
                 android:id="@+id/action_personal_fragment_to_training_dialog"
-                app:destination="@id/training_dialog"/>
+                app:destination="@id/training_dialog" />
         <action
                 android:id="@+id/action_personal_fragment_to_language_dialog"
-                app:destination="@id/language_dialog"/>
+                app:destination="@id/language_dialog" />
         <action
                 android:id="@+id/action_personal_fragment_to_hobby_dialog"
-                app:destination="@id/hobby_dialog"/>
+                app:destination="@id/hobby_dialog" />
     </fragment>
 
     <fragment
             android:id="@+id/project_fragment"
             android:name="com.foxcoder.cvapplication.view.fragments.projects.ProjectsFragment"
-            tools:layout="@layout/fragment_projects"/>
+            tools:layout="@layout/fragment_projects" />
     <action
             android:id="@+id/action_global_skill_fragment"
-            app:destination="@id/skill_fragment"/>
+            app:destination="@id/skill_fragment" />
     <action
             android:id="@+id/action_global_main_fragment2"
-            app:destination="@id/main_fragment"/>
+            app:destination="@id/main_fragment" />
     <action
             android:id="@+id/action_global_personal_fragment"
-            app:destination="@id/personal_fragment"/>
+            app:destination="@id/personal_fragment" />
     <action
             android:id="@+id/action_global_project_fragment"
-            app:destination="@id/project_fragment"/>
+            app:destination="@id/project_fragment" />
 
     <dialog
             android:id="@+id/academic_dialog"
             android:name="com.foxcoder.cvapplication.view.fragments.personal.AcademicDialog"
-            tools:layout="@layout/fragment_academic"
-            />
+            tools:layout="@layout/fragment_academic" />
     <dialog
             android:id="@+id/training_dialog"
             android:name="com.foxcoder.cvapplication.view.fragments.personal.TrainingDialog"
-            tools:layout="@layout/fragment_training_dialog"/>
+            tools:layout="@layout/fragment_training_dialog" />
 
-    <dialog android:id="@+id/language_dialog"
+    <dialog
+            android:id="@+id/language_dialog"
             android:name="com.foxcoder.cvapplication.view.fragments.personal.LanguageDialog"
-            tools:layout="@layout/fragment_language_dialog"/>
+            tools:layout="@layout/fragment_language_dialog" />
 
-    <dialog android:name="com.foxcoder.cvapplication.view.fragments.personal.HobbyDialog"
+    <dialog
+            android:name="com.foxcoder.cvapplication.view.fragments.personal.HobbyDialog"
             android:id="@+id/hobby_dialog"
-            tools:layout="@layout/fragment_hobby_dialog"/>
+            tools:layout="@layout/fragment_hobby_dialog" />
 
-    <dialog android:id="@+id/core_skill_dialog"
+    <dialog
+            android:id="@+id/core_skill_dialog"
             android:name="com.foxcoder.cvapplication.view.fragments.skills.CoreSkillDialog"
-            tools:layout="@layout/core_skill_dialog"/>
+            tools:layout="@layout/core_skill_dialog" />
+    <dialog
+            android:id="@+id/contactDialog"
+            android:name="com.foxcoder.cvapplication.view.fragments.personal.ContactDialog"
+            android:label="fragment_contact_dialog"
+            tools:layout="@layout/fragment_contact_dialog" />
 
 </navigation>
