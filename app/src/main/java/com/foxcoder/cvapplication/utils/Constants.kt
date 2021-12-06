@@ -41,12 +41,19 @@ val myExperiences =
 
 val myProjects = listOf(
     Project(
+        projectName = "Go Zayaan",
+        clientName = "Go Zayaan Pvt. Ltd.",
+        shortDescription = "Make travel bookings easier: Let your travel bookings be simple; browse, compare and book-do it all through a single app.",
+        contributions = listOf("Designed", "Developed"),
+        appIcon = R.drawable.gz,
+        storeUrl = "https://play.google.com/store/apps/details?id=com.gozayaan.app",
+    ), Project(
         projectName = "Shuttle",
         clientName = "Go Zayaan Pvt. Ltd.",
         shortDescription = "An app to provide shuttle service during Covid-19 pandemic.Unfortunately currently discontinued",
         contributions = listOf("Designed", "Developed"),
         appIcon = R.drawable.shuttle,
-        storeUrl = "http://gozayaan.com",
+        storeUrl = "https://gozayaan.com",
     ),
     Project(
         projectName = "HateemTai",
@@ -72,15 +79,16 @@ val myProjects = listOf(
         contributions = listOf("Developed as part of team"),
         appIcon = R.drawable.uddom,
         storeUrl = "http://rahimafrooz-solar.com/uddom/"
-    ),
-    Project(
-        projectName = "Truck Pathao (ট্রাক পাঠাও)",
-        clientName = "TruckPathao Inc.",
-        shortDescription = "Truck Pathao make transportation easier. You can hire or rent a vehicles, such as trucks, covered vans, prime movers etc.",
-        contributions = listOf("Design", "Planned", "Developed", "Freelance Project"),
-        appIcon = R.drawable.truck,
-        storeUrl = "https://play.google.com/store/apps/details?id=com.truckpathao.www",
     )
+//    ,
+//    Project(
+//        projectName = "Truck Pathao (ট্রাক পাঠাও)",
+//        clientName = "TruckPathao Inc.",
+//        shortDescription = "Truck Pathao make transportation easier. You can hire or rent a vehicles, such as trucks, covered vans, prime movers etc.",
+//        contributions = listOf("Design", "Planned", "Developed", "Freelance Project"),
+//        appIcon = R.drawable.truck,
+//        storeUrl = "https://play.google.com/store/apps/details?id=com.truckpathao.www",
+//    )
 )
 val coreSkills = listOf(
     "Ability to multitask with strict time constraints, budgets and business goals.",
@@ -99,7 +107,8 @@ val coreSkills = listOf(
 val programmingLanguages = listOf("Kotlin", "java", "C++", "Dart", "Swift")
 val ide = listOf("Intellij", "VS Code", "Android Studio")
 val os = listOf("Windows", "macOS", "linux")
-val designTools = listOf("Figma", "Adobe XD", "Adobe Illustrator", "Adobe InDesign", "Adobe Photoshop")
+val designTools =
+    listOf("Figma", "Adobe XD", "Adobe Illustrator", "Adobe InDesign", "Adobe Photoshop")
 val vsc = listOf("GitHub", "BitBucket", "Source Tree")
 val designPattern = listOf("MVP", "MVVM", "Google Material Design")
 
@@ -108,7 +117,7 @@ val personalDataItems = listOf(
     PersonalDataItem("Professional Trainings", R.drawable.ic_certification),
     PersonalDataItem("Languages I Speak", R.drawable.ic_language),
     PersonalDataItem("Leisure Interests", R.drawable.ic_hobbies),
-    PersonalDataItem("Social Handles", R.drawable.ic_like),
+    PersonalDataItem("Contacts & Social Handles", R.drawable.ic_like),
 )
 
 val academicAccomplishmentItems = listOf(
@@ -140,7 +149,9 @@ val academicAccomplishmentItems = listOf(
 val trainings = listOf(
     TrainingItem(
         institute = "Basis Institute of Technology & Management (BITM)",
-        date = "2016", subject = "Professional Android Application Development", durations = "120 Hours"
+        date = "2016",
+        subject = "Professional Android Application Development",
+        durations = "120 Hours"
     )
 )
 
@@ -152,4 +163,24 @@ val languagesISpeak = listOf(
 )
 
 val myHobbies =
-    listOf("IOT", "Aquascaping", "Cycling", "Farming", "Photography", "Traveling", "Poetry", "Cooking", "DIY projects")
+    listOf(
+        "IOT",
+        "Aquascaping",
+        "Cycling",
+        "Farming",
+        "Photography",
+        "Traveling",
+        "Poetry",
+        "Cooking",
+        "DIY projects"
+    )
+
+val socialHandles = listOf(
+    SocialHandle("Facebook", "fb/rayhan0123", R.drawable.ic_facebook, "https://fb/rayhan0123"),
+    SocialHandle("gitHub", "github/rayhan0123", R.drawable.ic_github, "https://github.com/Rayhan-kh"),
+    SocialHandle("Linkedin", "github/rayhan0123", R.drawable.ic_linked_in, "linkedin.com/in/rayhan-khan-a1b4b4112"),
+    SocialHandle("Gmail", "rayhan0123@gmail.com", R.drawable.ic_gmail, ""),
+    SocialHandle("Phone", "+8801557737811", 0, ""),
+
+
+    )
