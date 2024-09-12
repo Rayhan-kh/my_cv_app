@@ -1,0 +1,14 @@
+changelog:
+  categories:
+    - title: 🏕 Features
+      labels:
+        - feat
+        - feature
+        
+    - title: 👒 Updates
+      labels:
+        - update
+        
+    - title: 👒 Bug Fixes
+      labels:
+        - fix
